@@ -1,0 +1,6 @@
+package com.tutorialspoint.demo.controller;
+
+@Component
+public class ProductServiceInterceptor implements HandlerInterceptor{
+
+}

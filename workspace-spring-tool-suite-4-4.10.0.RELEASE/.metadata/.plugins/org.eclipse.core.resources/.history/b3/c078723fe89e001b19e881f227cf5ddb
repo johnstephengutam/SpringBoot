@@ -1,0 +1,12 @@
+package com.tutorialspoint.demo.controller;
+
+@Component
+public class ProductServiceInterceptorAppConfig extends WebMvcConfigurerAdapter {
+   @Autowired
+   ProductServiceInterceptor productServiceInterceptor;
+
+   @Override
+   public void addInterceptors(InterceptorRegistry registry) {
+      registry.addInterceptor(productServiceInterceptor);
+   }
+}

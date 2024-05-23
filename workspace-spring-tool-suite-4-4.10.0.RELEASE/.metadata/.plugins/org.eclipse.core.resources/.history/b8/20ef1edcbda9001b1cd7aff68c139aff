@@ -1,0 +1,13 @@
+package com.tutorialspoint.emailapp;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class EmailController {
+	@RequestMapping(value = "/sendemail")
+	public String sendEmail() throws AddressException, MessagingException, IOException {
+	   sendmail();
+	   return "Email sent successfully";   
+	}  
+}

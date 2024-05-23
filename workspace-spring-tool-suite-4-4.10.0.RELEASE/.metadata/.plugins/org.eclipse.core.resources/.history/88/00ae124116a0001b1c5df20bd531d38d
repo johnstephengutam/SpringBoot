@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = Integer.parseInt(sc.nextLine());
+        
+        for(int k = 0; k < t; k++){
+            int lenOfString = sc.nextInt();//Integer.parseInt(sc.next());
+            int height = sc.nextInt();
+            String input = scanner.nextLine();
+            String[] numbers = input.split(" ");
+            char result[][] = new char[height][height];
+            int pointer = 0;
+            String str = sc.nextLine();
+            for(int i =0, j = 0; j < height; j++){
+                if(pointer == str.length() -1){
+                	System.out.println(str.charAt(pointer));
+                    result[i][j] = str.charAt(pointer);
+                    pointer = 0;
+                } else{
+                	System.out.println(str.charAt(pointer));
+                    result[i][j] = str.charAt(pointer);
+                    pointer++;
+                }
+            }
+            
+            for(int i = 1,j = height-1; i < height; i++){
+                if(pointer == str.length() -1){
+                	System.out.println(str.charAt(pointer));
+                    result[i][j] = str.charAt(pointer);
+                    pointer = 0;
+                } else{
+                	System.out.println(str.charAt(pointer));
+                    result[i][j] = str.charAt(pointer);
+                    pointer++;
+                }
+            }
+            
+            for(int i = height-1,j = height-2; j > -1; j--){
+                if(pointer == str.length() -1){
+                	System.out.println(str.charAt(pointer));
+                    result[i][j] = str.charAt(pointer);
+                    pointer = 0;
+                } else{
+                	System.out.println(str.charAt(pointer));
+                    result[i][j] = str.charAt(pointer);
+                    pointer++;
+                }
+            }
+            
+            for(int i = height-2,j = 0; i > 0; i--){
+                if(pointer == str.length() -1){
+                	System.out.println(str.charAt(pointer));
+                    result[i][j] = str.charAt(pointer);
+                    pointer = 0;
+                } else{
+                	System.out.println(str.charAt(pointer));
+                    result[i][j] = str.charAt(pointer);
+                    pointer++;
+                }
+            }
+            
+            for(int i =0; i < height; i++){
+            
+                for(int j = 0; j < height; j++){
+                    System.out.print(result[i][j]);
+                }
+                System.out.println() ;  
+                }
+            }
+        }
+    }

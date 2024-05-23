@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+class Stundent{
+	String name;
+	int age;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	boolean equals(Object o){
+		Student s = o ;
+		
+		return 0;
+	}
+}
+public class SampleTest {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> l1 = new ArrayList<Integer>();
+		l1.add(10);
+		l1.add(20);
+		
+		ArrayList<Integer> l2 = new ArrayList<Integer>();
+		l2.add(30);
+		l2.add(40);
+		
+		//Collections.addAll(l1,l2);
+		
+		boolean b = Collections.addAll(l1);
+	}
+
+}
